@@ -2,14 +2,13 @@ body {
   background: #FF2DD1;
 
   margin: 0; 
-  height: 100vh; /*ทำให้ไม่มีขอบ แสดงได้เต็ม*/
+  height: 100vh;
 
   display: flex;
   justify-content: center;
-  align-items: center; /*ทำให้คงที่แล้วให้มันอยู่ตรงกลาง*/
+  align-items: center;
 }
 
- /*ทำให้ข้อความอยู่ตรงกลางแล้วปรับ Font*/
 .container {
   text-align: center;
   font-family: sans-serif;
@@ -20,18 +19,15 @@ body {
   height: 100vh;
 }
 
-/*สีของข้อความ*/
 .title {
   font-size: 40px;
 }
 
-/*สีของแสดงตัวเลข*/
 #count {
   font-size: 60px;
   user-select: none;
 }
 
-/*ปรับขนาดกรอบ ระยะห่างระหว่างขอบ และขนาดข้อความในปุ่ม*/
 button {
   margin-top: 10px;
   padding: 10px 20px;
@@ -56,4 +52,3 @@ button {
   max-width: 50vw;
   max-height: 50vh;
   overflow-y: auto;
-}
