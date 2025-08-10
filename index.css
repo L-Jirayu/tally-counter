@@ -47,7 +47,13 @@ button {
 .card {
   background-color: #FDFFB8;
   border-radius: 15px;
-  padding: 100px;
+  padding: 40px 60px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  width: 400px;
+  height: 320px;
+  max-width: 50vw;
+  max-height: 50vh;
+  overflow-y: auto;
 }
