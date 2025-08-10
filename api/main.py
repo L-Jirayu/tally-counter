@@ -1,3 +1,6 @@
+#RUN: python -m uvicorn main:app --reload 
+#API Check web: http://127.0.0.1:8000/docs#/
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel

@@ -17,7 +17,7 @@ function showAlertAndMessage(alertMsg, message = '') {
 
 function handleError(action, error) {
   console.error(`Error ${action}:`, error);
-  showAlertAndMessage(`เกิดข้อผิดพลาดในการ${action}`);
+  showAlertAndMessage(`ไม่สามารถกด${action}`);
 }
 
 async function fetchCount() {
@@ -61,7 +61,7 @@ increaseBtn?.addEventListener('click', () => {
       if (data.message) safeSetTextContent(activityText, data.message);
     } 
     catch (error) {
-      handleError('เพิ่มค่า', error);
+      handleError('เพิ่มค่าได้', error);
     }
   });
 });
@@ -72,14 +72,13 @@ decreaseBtn?.addEventListener('click', () => {
       const data = await postApiAction('decrement');
       safeSetTextContent(countDisplay, data.count);
       if (data.message) {
-        showAlertAndMessage(data.message);
         safeSetTextContent(activityText, data.message);
       } else {
         safeSetTextContent(activityText, '');
       }
     } 
     catch (error) {
-      handleError('ลดค่า', error);
+      handleError('ลดค่าได้', error);
     }
   });
 });
@@ -92,7 +91,7 @@ clearBtn?.addEventListener('click', () => {
       safeSetTextContent(activityText, data.message);
     } 
     catch (error) {
-      handleError('รีเซ็ต', error);
+      handleError('รีเซ็ตได้', error);
     }
   });
 });
