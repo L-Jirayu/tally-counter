@@ -5,15 +5,17 @@ For study about JAM Stack using VanillaJS + FastAPI for collection counting</br>
 
 ------------------------------------------------------------------------------------------
 
-## Tools
+## Tools for JAM Stack
 
 **VanillaJS** include</br>
 -*HTML*</br>
--*CSS*</br>
+-*CSS* + *Bootstrap*</br>
 -*Javascript*</br>
+it is **J and M**.
 
 **FastAPI** include</br>
 -*Python*</br>
+it it **A**
 
 ------------------------------------------------------------------------------------------
 
