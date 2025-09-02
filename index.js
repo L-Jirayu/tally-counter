@@ -1,4 +1,4 @@
-const apiBaseUrl = window.API_BASE_URL || 'http://localhost:8000/count';
+const apiBaseUrl = window.API_BASE_URL || 'https://tally-counter-p7k1.onrender.com/count';
 
 const countDisplay = document.getElementById('count');
 const increaseBtn = document.getElementById('increaseBtn');
